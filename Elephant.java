@@ -20,7 +20,7 @@ public class Elephant extends Actor
         for (int i = 0; i < idleRight.length; i++)
         {
            idleRight[i] = new GreenfootImage ("images/elephant_idle/idle" + i + ".png"); 
-           idleRight[i].scale(100, 100);
+           idleRight[i].scale(200, 50);
         }
         
         for(int i = 0; i < idleLeft.length; i++)
@@ -33,6 +33,8 @@ public class Elephant extends Actor
     }
     
     int imageIndex = 0;
+    
+    // Gives the elephant an animation
     public void animateElephant()
     {
         if(animationTimer.millisElapsed() < 100)
